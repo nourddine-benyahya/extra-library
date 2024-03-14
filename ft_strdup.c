@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbenyahy <nbenyahy@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: nbenyahy <nbenyahy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 19:58:51 by nbenyahy          #+#    #+#             */
-/*   Updated: 2023/12/13 12:07:59 by nbenyahy         ###   ########.fr       */
+/*   Updated: 2024/03/13 08:22:50 by nbenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,9 @@ char	*ft_strdup(const char *s)
 	len = ft_strlen(s);
 	ptr = (char *)malloc(sizeof(char) * (len + 1));
 	if (!ptr)
+	{
 		return (NULL);
+	}
 	i = 0;
 	while (s[i])
 	{

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nbenyahy <nbenyahy@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: nbenyahy <nbenyahy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 12:41:28 by nbenyahy          #+#    #+#             */
-/*   Updated: 2023/12/16 17:10:32 by nbenyahy         ###   ########.fr       */
+/*   Updated: 2024/03/14 00:44:30 by nbenyahy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 # include <string.h>
 # include <limits.h>
 # include <stdarg.h>
-
-
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
@@ -42,7 +40,6 @@ int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-int		ft_strcmp(const char *s1, const char *s2);
 char	*ft_strnstr(const char *big,	const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
@@ -92,6 +89,5 @@ char	*ft_gnl_bonus_join(char *ptr, char *helper);
 char	*ft_gnl_bonus_change_reminder(char *helper);
 char	*ft_gnl_bonus_free(char **ptr1, char **ptr2);
 char	*get_next_line(int fd);
-
 
 #endif
